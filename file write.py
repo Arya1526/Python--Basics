@@ -1,0 +1,13 @@
+name = input("Enter student name: ")
+age = input("Enter age: ")
+marks = input("Enter marks: ")
+
+file = open("student.txt", "w")
+
+file.write("Name: " + name + "\n")
+file.write("Age: " + age + "\n")
+file.write("Marks: " + marks)
+
+file.close()
+
+print("Student details stored in file")
